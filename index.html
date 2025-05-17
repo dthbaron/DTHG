@@ -12,7 +12,7 @@
     }
     header {
       background-color: #0a0a0a;
-      padding: 1rem 2rem;
+      padding: 0.5rem 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -20,6 +20,14 @@
       top: 0;
       z-index: 100;
       box-shadow: 0 2px 5px rgba(0,0,50,0.7);
+    }
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+    header .logo img {
+      height: 40px;
+      margin-right: 10px;
     }
     header h1 {
       margin: 0;
@@ -97,12 +105,20 @@
       font-size: 0.9rem;
       user-select: none;
     }
+    .page img.logo-inline {
+      display: block;
+      margin: 1rem auto;
+      max-width: 150px;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>DeathGarden Clan</h1>
+  <div class="logo">
+    <img src="DTHG_BW.png" alt="DTHG Logo" />
+    <h1>DeathGarden Clan</h1>
+  </div>
   <nav>
     <a href="#who-we-are" onclick="showPage('who-we-are')">Who We Are</a>
     <a href="#teams" onclick="showPage('teams')">Teams</a>
@@ -114,6 +130,7 @@
 
 <main>
   <section id="who-we-are" class="page">
+    <img src="DTHG_BW_NOBG.png" alt="DTHG Logo Inline" class="logo-inline" />
     <h2>Who We Are</h2>
     <p>
       We are DeathGarden, the new clan making its way on the scene created by Xeal in 2024. We are starting in CS2 but we are still looking for more players. We are also looking for IGLs for other competitive games like Valorant or Overwatch2, or just anything you want.
@@ -136,30 +153,35 @@
     </div>
     <div class="news-item">
       <strong>CS2 26.03.2025</strong><br />
-      Now we are back with the news we have new Rifler welcome Kitsu at this role.
+      Now we are back with the news we have new Rifler — welcome Kitsu at this role.
     </div>
     <div class="news-item">
       <strong>CS2 11.03.2025</strong><br />
-      Today we start with the team Welcome to Shiver our IGL, Leo our Sniper and Xeal our Lurker.
+      Today we start with the team. Welcome to Shiver our IGL, Leo our Sniper and Xeal our Lurker.
     </div>
   </section>
 
   <section id="become-player" class="page" style="display:none;">
     <h2>Become a Player</h2>
+
     <h3>Join the DTHG CS2 Roster</h3>
     <p>
-      Hey if you are here there is a big probability you want to join DeathGarden. Beneath you have Google Form that you can fill to join DTHG CS2 team or you can contact us on the Discord, you can find link on the Contact us site.
+      Hey if you are here, there's a big probability you want to join DeathGarden. Below is a Google Form you can fill out to join the DTHG CS2 team, or you can contact us on Discord (link on the Contact Us page).
     </p>
     <div class="form-links">
-      <a href="#" target="_blank" aria-label="Link to CS2 Join Form">CS2 Join Form (link placeholder)</a>
+      <a href="https://forms.gle/USMt11bDTee8KR1X7" target="_blank" rel="noopener">
+        CS2 Join Form
+      </a>
     </div>
 
-    <h3>Create DTHG Team</h3>
+    <h3>Create a DTHG Team</h3>
     <p>
-      Hey in this form you can create a DTHG team in any competitive game (Or secondary team for some game) you want, just fill application form and we will look at it and give you an answer shortly.
+      Want to start your own DTHG team in another competitive game? Fill out the form below and we'll review your request and get back to you shortly.
     </p>
     <div class="form-links">
-      <a href="#" target="_blank" aria-label="Link to Create Team Form">Create Team Form (link placeholder)</a>
+      <a href="https://forms.gle/TbJvc1LtwZQt7qs1A" target="_blank" rel="noopener">
+        Create Team Form
+      </a>
     </div>
   </section>
 
@@ -180,21 +202,14 @@
 </footer>
 
 <script>
-  // Show page content by id and hide others
   function showPage(pageId) {
     const pages = document.querySelectorAll('.page');
     pages.forEach(page => {
-      if (page.id === pageId) {
-        page.style.display = 'block';
-      } else {
-        page.style.display = 'none';
-      }
+      page.style.display = page.id === pageId ? 'block' : 'none';
     });
-    // Update URL hash without scrolling
     history.replaceState(null, null, '#' + pageId);
   }
 
-  // On page load, show the correct page based on URL hash or default to "Who We Are"
   window.addEventListener('load', () => {
     let hash = location.hash.replace('#', '');
     if (!hash) hash = 'who-we-are';
