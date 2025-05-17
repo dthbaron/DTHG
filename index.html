@@ -54,6 +54,10 @@
       border-bottom: 2px solid #3399ff;
       padding-bottom: 0.3rem;
       margin-bottom: 1rem;
+      text-transform: none;
+    }
+    h3 {
+      text-transform: none;
     }
     section {
       margin-bottom: 3rem;
@@ -67,6 +71,8 @@
       margin: 10px;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(51,153,255,0.3);
+      object-fit: cover;
+      clip-path: inset(10px);
     }
     .news-item {
       margin-bottom: 1rem;
@@ -99,7 +105,7 @@
       text-align: center;
       padding: 1rem 0;
       background: #0a0a0a;
-      color: #666666;
+      color: #999999;
       font-size: 0.9rem;
       user-select: none;
     }
@@ -107,12 +113,6 @@
       display: block;
       margin: 1rem auto;
       max-width: 150px;
-    }
-    .discord-widget {
-      margin-top: 1.5rem;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 0 12px rgba(51,153,255,0.5);
     }
   </style>
 </head>
@@ -147,7 +147,7 @@
       Starting strong we are collecting our CS2 Teams. We are looking for sniper and entry to our team, hit us up on the apply page to join.
     </p>
     <div class="photo-placeholder">
-      <img src="DeathGrardenCS2.png" alt="CS2 Team Photo">
+      <img src="DeathGrarden_CS2.png" alt="CS2 Team Photo">
     </div>
   </section>
 
@@ -193,21 +193,25 @@
 
   <section id="contact-us" class="page" style="display:none;">
     <h2>Contact Us</h2>
-    <p>
-      You can reach us through Discord or by email. We are happy to answer any questions or receive your applications.
-    </p>
     <ul>
-      <li><strong>Discord:</strong> <a href="https://discord.gg/NpXM4utZgZ" target="_blank" rel="noopener" style="color:#3399ff;">Join our Discord</a></li>
-      <li><strong>Email:</strong> <a href="mailto:contact@deathgarden.gg" style="color:#3399ff;">contact@deathgarden.gg</a></li>
+      <li><strong>Discord:</strong> <a href="https://discord.gg/t6rUsx4Hwj" target="_blank" rel="noopener" style="color:#3399ff;">Join our Discord</a></li>
+      <li><strong>Steam Group:</strong> <a href="https://steamcommunity.com/groups/DTHGarden" target="_blank" rel="noopener" style="color:#3399ff;">Join our Steam Group</a></li>
     </ul>
-    <div class="discord-widget">
-      <iframe src="https://discord.com/widget?id=1234123412341234&theme=dark" width="100%" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    <div class="photo-placeholder">
+      <iframe 
+        src="https://discord.com/widget?id=1254166098731991134&theme=dark"
+        width="100%" 
+        height="400" 
+        allowtransparency="true" 
+        frameborder="0" 
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+      </iframe>
     </div>
   </section>
 </main>
 
 <footer>
-  &copy; 2024 DeathGarden Clan. All rights reserved.
+  Made by Dthbaron and Leo of DeathGarden team #DTHG
 </footer>
 
 <script>
