@@ -60,15 +60,12 @@
     }
     .photo-placeholder {
       margin-top: 1rem;
-      background-color: #001933;
-      color: #99ccff;
-      height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-style: italic;
+      text-align: center;
+    }
+    .photo-placeholder img {
+      max-width: 100%;
       border-radius: 5px;
-      user-select: none;
+      box-shadow: 0 0 10px rgba(51,153,255,0.3);
     }
     .news-item {
       margin-bottom: 1rem;
@@ -142,7 +139,9 @@
     <p>
       Starting strong we are collecting our CS2 Teams. We are looking for sniper and entry to our team, hit us up on the apply page to join.
     </p>
-    <div class="photo-placeholder">Photo placeholder for team</div>
+    <div class="photo-placeholder">
+      <img src="DeathGrarden_CS2.png" alt="CS2 Team Photo">
+    </div>
   </section>
 
   <section id="news" class="page" style="display:none;">
