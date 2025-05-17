@@ -2,10 +2,205 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Simple Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeathGarden Clan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0; background: #000000;
+      color: #cce6ff;
+    }
+    header {
+      background-color: #0a0a0a;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,50,0.7);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #3399ff;
+      user-select: none;
+    }
+    nav a {
+      color: #cce6ff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #3399ff;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #3399ff;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    .photo-placeholder {
+      margin-top: 1rem;
+      background-color: #001933;
+      color: #99ccff;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: italic;
+      border-radius: 5px;
+      user-select: none;
+    }
+    .news-item {
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      border-left: 3px solid #3399ff;
+    }
+    .form-links {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #001a33;
+      border-radius: 5px;
+    }
+    .form-links a {
+      display: inline-block;
+      margin-right: 1.5rem;
+      margin-top: 0.5rem;
+      color: #3399ff;
+      font-weight: bold;
+      text-decoration: none;
+      border: 1px solid #3399ff;
+      padding: 0.4rem 1rem;
+      border-radius: 3px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .form-links a:hover {
+      background-color: #3399ff;
+      color: #000000;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #0a0a0a;
+      color: #666666;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is the simplest HTML page.</p>
+
+<header>
+  <h1>DeathGarden Clan</h1>
+  <nav>
+    <a href="#who-we-are" onclick="showPage('who-we-are')">Who We Are</a>
+    <a href="#teams" onclick="showPage('teams')">Teams</a>
+    <a href="#news" onclick="showPage('news')">News</a>
+    <a href="#become-player" onclick="showPage('become-player')">Become a Player</a>
+    <a href="#contact-us" onclick="showPage('contact-us')">Contact Us</a>
+  </nav>
+</header>
+
+<main>
+  <section id="who-we-are" class="page">
+    <h2>Who We Are</h2>
+    <p>
+      We are DeathGarden, the new clan making its way on the scene created by Xeal in 2024. We are starting in CS2 but we are still looking for more players. We are also looking for IGLs for other competitive games like Valorant or Overwatch2, or just anything you want.
+    </p>
+  </section>
+
+  <section id="teams" class="page" style="display:none;">
+    <h2>Teams - CS2</h2>
+    <p>
+      Starting strong we are collecting our CS2 Teams. We are looking for sniper and entry to our team, hit us up on the apply page to join.
+    </p>
+    <div class="photo-placeholder">Photo placeholder for team</div>
+  </section>
+
+  <section id="news" class="page" style="display:none;">
+    <h2>News</h2>
+    <div class="news-item">
+      <strong>CS2 17.04.2025</strong><br />
+      Today we completed the team with Elthi taking role as our Anchor.
+    </div>
+    <div class="news-item">
+      <strong>CS2 26.03.2025</strong><br />
+      Now we are back with the news we have new Rifler welcome Kitsu at this role.
+    </div>
+    <div class="news-item">
+      <strong>CS2 11.03.2025</strong><br />
+      Today we start with the team Welcome to Shiver our IGL, Leo our Sniper and Xeal our Lurker.
+    </div>
+  </section>
+
+  <section id="become-player" class="page" style="display:none;">
+    <h2>Become a Player</h2>
+    <h3>Join the DTHG CS2 Roster</h3>
+    <p>
+      Hey if you are here there is a big probability you want to join DeathGarden. Beneath you have Google Form that you can fill to join DTHG CS2 team or you can contact us on the Discord, you can find link on the Contact us site.
+    </p>
+    <div class="form-links">
+      <a href="#" target="_blank" aria-label="Link to CS2 Join Form">CS2 Join Form (link placeholder)</a>
+    </div>
+
+    <h3>Create DTHG Team</h3>
+    <p>
+      Hey in this form you can create a DTHG team in any competitive game (Or secondary team for some game) you want, just fill application form and we will look at it and give you an answer shortly.
+    </p>
+    <div class="form-links">
+      <a href="#" target="_blank" aria-label="Link to Create Team Form">Create Team Form (link placeholder)</a>
+    </div>
+  </section>
+
+  <section id="contact-us" class="page" style="display:none;">
+    <h2>Contact Us</h2>
+    <p>
+      You can reach us through Discord or by email. We are happy to answer any questions or receive your applications.
+    </p>
+    <ul>
+      <li><strong>Discord:</strong> <a href="https://discord.gg/yourdiscordlink" target="_blank" rel="noopener" style="color:#3399ff;">Join our Discord</a></li>
+      <li><strong>Email:</strong> <a href="mailto:contact@deathgarden.gg" style="color:#3399ff;">contact@deathgarden.gg</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  &copy; 2024 DeathGarden Clan. All rights reserved.
+</footer>
+
+<script>
+  // Show page content by id and hide others
+  function showPage(pageId) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => {
+      if (page.id === pageId) {
+        page.style.display = 'block';
+      } else {
+        page.style.display = 'none';
+      }
+    });
+    // Update URL hash without scrolling
+    history.replaceState(null, null, '#' + pageId);
+  }
+
+  // On page load, show the correct page based on URL hash or default to "Who We Are"
+  window.addEventListener('load', () => {
+    let hash = location.hash.replace('#', '');
+    if (!hash) hash = 'who-we-are';
+    showPage(hash);
+  });
+</script>
+
 </body>
 </html>
