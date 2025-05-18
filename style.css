@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0; background: #000000;
+    color: #cce6ff;
+}
+header {
+    background-color: #0a0a0a;
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,50,0.7);
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #3399ff;
+    user-select: none;
+}
+nav a {
+    color: #cce6ff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #3399ff;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+h2 {
+    border-bottom: 2px solid #3399ff;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    text-transform: none;
+}
+h3 {
+    text-transform: none;
+}
+section {
+    margin-bottom: 3rem;
+}
+.photo-placeholder {
+    margin-top: 1rem;
+    text-align: center;
+}
+.photo-placeholder img {
+    max-width: calc(100% - 20px);
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(51,153,255,0.3);
+    object-fit: cover;
+    clip-path: inset(10px);
+}
+.news-item {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid #3399ff;
+}
+.form-links {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #001a33;
+    border-radius: 5px;
+}
+.form-links a {
+    display: inline-block;
+    margin-right: 1.5rem;
+    margin-top: 0.5rem;
+    color: #3399ff;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #3399ff;
+    padding: 0.4rem 1rem;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.form-links a:hover {
+    background-color: #3399ff;
+    color: #000000;
+}
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #0a0a0a;
+    color: #999999;
+    font-size: 0.9rem;
+    user-select: none;
+}
+.page img.logo-inline {
+    display: block;
+    margin: 1rem auto;
+    max-width: 150px;
+}
