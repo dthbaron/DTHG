@@ -65,7 +65,6 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(51,153,255,0.3);
     object-fit: cover;
-    clip-path: inset(10px);
 }
 .news-item {
     margin-bottom: 1rem;
