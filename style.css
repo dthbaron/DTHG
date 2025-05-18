@@ -104,5 +104,5 @@ footer {
 .page img.logo-inline {
     display: block;
     margin: 1rem auto;
-    max-width: 150px;
+    max-width: 300px; /* previously 150px */
 }
