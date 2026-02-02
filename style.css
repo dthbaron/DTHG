@@ -57,6 +57,12 @@ h3 {
 section {
   margin-bottom: 3rem;
 }
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .photo-placeholder {
   margin-top: 1rem;
   text-align: center;
