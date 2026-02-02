@@ -139,6 +139,11 @@ label {
   margin-top: 12px;
 }
 
+label:hover {
+  background-color: #3399ff;
+  color: #000000;
+}
+
 .news-content {
   display: none;
 }
