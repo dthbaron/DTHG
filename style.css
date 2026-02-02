@@ -116,3 +116,29 @@ footer {
   height: 150px;
   margin: auto;
 }
+
+#ch {
+  display: none;
+}
+
+#ch:checked ~ .news-content {
+  display: block;
+}
+
+#ch:checked ~ label {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  color: #cce6ff;
+  border: solid #3399ff;
+  border-radius: 3px;
+  padding: 3px 13px;
+  margin-top: 12px;
+}
+
+.news-content {
+  display: none;
+}
