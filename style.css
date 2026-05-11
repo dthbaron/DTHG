@@ -5,6 +5,7 @@ body {
   background: #000000;
   color: #cce6ff;
 }
+
 header {
   background-color: #0a0a0a;
   padding: 0.5rem 2rem;
@@ -156,4 +157,10 @@ label:hover {
 
 .news-content {
   display: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
